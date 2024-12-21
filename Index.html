@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced BOF Scanning Dashboard</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css">
+</head>
+<body>
+    <h1>Enhanced BOF Scanning Dashboard</h1>
+    <label for="fileInput">Upload your Excel/JSON file:</label>
+    <input type="file" id="fileInput" accept=".xlsx,.xls,.json">
+    <br><br>
+    <label for="vesselFilter">Filter by Vessel Campaign:</label>
+    <select id="vesselFilter" multiple></select>
+    <br><br>
+    <button id="applyFilter">Apply Filter</button>
+    <br><br>
+    <div id="chartsContainer">
+        <div id="chart1" class="chart"></div>
+        <div id="chart2" class="chart"></div>
+        <div id="chart3" class="chart"></div>
+        <div id="chart4" class="chart"></div>
+        <div id="chart5" class="chart"></div>
+        <div id="chart6" class="chart"></div>
+        <div id="chart7" class="chart"></div>
+    </div>
+    <!-- External JS -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+</html>
